@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Total Counts" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btminus"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_minus"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btplus"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_button_plus"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Resest Counter"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        app:rippleColor="@color/black" />
+
+</LinearLayout>
